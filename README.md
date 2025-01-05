@@ -1,26 +1,23 @@
-# Template Repository for Go Packages
+# A Template Repository for Go Projects
 
-[![Tests](https://github.com/habedi/template-go-package/actions/workflows/tests.yml/badge.svg)](https://github.com/habedi/template-go-package/actions/workflows/tests.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/habedi/template-go-package)](https://goreportcard.com/report/github.com/habedi/template-go-package)
-[![Go Reference](https://pkg.go.dev/badge/github.com/habedi/template-go-package.svg)](https://pkg.go.dev/github.com/habedi/template-go-package)
-[![License](https://img.shields.io/github/license/habedi/template-go-package)](https://github.com/habedi/template-go-package/blob/main/LICENSE)
+<img src="assets/logo-v1.svg" align="right" width="25%"/>
 
-This is a template repository to make it easier to start developing Go packages.
-It includes a basic structure for a Go package plus some additional useful files like GitHub Actions for running unit
-tests.
+[![Tests](https://github.com/habedi/template-go-project/actions/workflows/tests.yml/badge.svg)](https://github.com/habedi/template-go-project/actions/workflows/tests.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/habedi/template-go-project)](https://goreportcard.com/report/github.com/habedi/template-go-project)
+[![Go Reference](https://pkg.go.dev/badge/github.com/habedi/template-go-project.svg)](https://pkg.go.dev/github.com/habedi/template-go-project)
 
-I made this template to have a starting point for my Go packages and to speed up the development process. I hope it will
-be useful for you as well. Feel free to use it for your projects as is or modify it to fit your needs.
+[//]: # ([![Release]&#40;https://img.shields.io/github/release/habedi/template-go-project.svg?style=flat-square&#41;]&#40;https://github.com/habedi/template-go-project/releases/latest&#41;)
 
-## Files
+[//]: # ([![License]&#40;https://img.shields.io/github/license/habedi/template-go-project&#41;]&#40;https://github.com/habedi/template-go-project/blob/main/LICENSE&#41;)
 
-These files are included in the repository:
+This is a template repository with a minimalistic structure to make it easier to start a new Go project,
+like for developing a console or a web application.
 
-- `.github/workflows/tests.yml`: GitHub Actions workflow for running the unit tests.
-- `.editorconfig`: Editor configuration file for consistent coding styles.
-- `.gitignore`: A gitignore file for Go projects.
-- `go.mod`: Go module file.
-- `LICENSE`: License file.
-- `README.md`: Readme file.
-- `package.go`: Package file which includes the package code.
-- `package_test.go`: Unit tests for the functions in the package file.
+I made this template to provide a starting point for my Go projects and save time.
+It is inspired by the recommendations
+in [golang-standards/project-layout](https://github.com/golang-standards/project-layout).
+I hope it will be useful for others as well.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

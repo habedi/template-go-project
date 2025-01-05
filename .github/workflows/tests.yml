@@ -26,8 +26,10 @@ jobs:
                 run: |
                     go mod tidy
                     go mod download
+                    sudo apt-get install -y make
+                continue-on-error: false
 
             -   name: Run Tests
                 run: |
-                    go test -v ./...
+                    make test
                 continue-on-error: false
