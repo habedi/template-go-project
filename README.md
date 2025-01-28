@@ -1,4 +1,4 @@
-# A Template Repository for Go Projects
+# A Template for Go Projects
 
 <div align="center">
   <picture>
