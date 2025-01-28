@@ -75,7 +75,7 @@ install-deps: ## Install development dependencies on Debian-based systems
 	#sudo apt-get install -y chromium-browser build-essential chromium || true # ignore errors
 	#sudo snap install chromium
 	#sudo snap install go --classic
-	#sudo snap install golangci-lint --classic
+	sudo snap install golangci-lint --classic
 	go mod download
 
 .PHONY: lint

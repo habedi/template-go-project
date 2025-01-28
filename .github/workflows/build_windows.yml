@@ -22,14 +22,13 @@ jobs:
             -   name: Install Dependencies
                 run: |
                     choco install make -y
-                    make format
                     make test
                 continue-on-error: false
 
             # Build the application
             -   name: Build for Windows
                 run: |
-                    make build GOGG_BINARY=gogg.exe
+                    make build PROJ_BINARY=template-go-project.exe
                 continue-on-error: false
 
             # Debug: List Build Directory
@@ -40,5 +39,5 @@ jobs:
             -   name: Upload Build Artifact
                 uses: actions/upload-artifact@v4
                 with:
-                    name: gogg-windows-amd64
-                    path: 'bin/gogg.exe'
+                    name: template-go-project-windows-amd64
+                    path: 'bin/template-go-project.exe'

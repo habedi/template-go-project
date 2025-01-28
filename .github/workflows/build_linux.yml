@@ -39,5 +39,5 @@ jobs:
             -   name: Upload Build Artifact
                 uses: actions/upload-artifact@v4
                 with:
-                    name: gogg-linux-amd64
-                    path: 'bin/gogg'
+                    name: template-go-project-linux-amd64
+                    path: 'bin/template-go-project'
