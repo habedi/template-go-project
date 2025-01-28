@@ -71,7 +71,7 @@ snap-deps: ## Install Snapcraft dependencies
 .PHONY: install-deps
 install-deps: ## Install development dependencies on Debian-based systems
 	@echo "Installing dependencies..."
-	#make snap-deps
+	make snap-deps
 	#sudo apt-get install -y chromium-browser build-essential chromium || true # ignore errors
 	#sudo snap install chromium
 	#sudo snap install go --classic
