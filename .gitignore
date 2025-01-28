@@ -72,6 +72,9 @@ poetry.lock
 *.test
 *.prof
 *.exe
+coverage.txt
+coverage.out
+coverage.html
 #go.sum
 
 # Miscellaneous files and directories to ignore

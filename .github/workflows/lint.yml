@@ -1,0 +1,33 @@
+name: Run Linters
+
+on:
+    workflow_dispatch: # Allow manual execution
+    push:
+        tags:
+            - 'v*' # Trigger on version tags
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+
+        steps:
+                # Checkout code from repository
+            -   name: Checkout code
+                uses: actions/checkout@v4
+
+                # Set up Go environment
+            -   name: Set up Go
+                uses: actions/setup-go@v5
+                with:
+                    go-version: '1.23'
+
+                # Install golangci-lint
+            -   name: Install dependencies
+                run: |
+                    make install-deps
+
+                # Run linters
+            -   name: Run linters
+                run: |
+                    make lint
+                continue-on-error: false

@@ -1,6 +1,6 @@
 module github.com/habedi/template-go-project
 
-	// Minimum Go version that the module supports
+// Minimum Go version that the module supports
 go 1.19
 
 // Module's dependencies
