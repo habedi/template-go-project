@@ -1,43 +1,84 @@
-# Declare PHONY targets
-.PHONY: test test-cover format build clean
-
 # Variables
 PKG = github.com/habedi/template-go-project
-COVER_PROFILE = cover.out
+BINARY_NAME = $(or $(PROJ_BINARY), $(notdir $(PKG)))
+BINARY = bin/$(BINARY_NAME)
+COVER_PROFILE = coverage.txt
 GO_FILES = $(shell find . -type f -name '*.go')
 COVER_FLAGS = --cover --coverprofile=$(COVER_PROFILE)
+CUSTOM_SNAPCRAFT_BUILD_ENVIRONMENT = $(or $(SNAP_BACKEND), multipass)
+PATH := /snap/bin:$(PATH)
 
-# Test with coverage and view HTML report
-test-cover: format
-	@echo "Running tests with coverage..."
-	go test -v ./... --race $(COVER_FLAGS)
-	go tool cover -html=$(COVER_PROFILE)
+# Default target
+.DEFAULT_GOAL := help
 
-# Format Go files
-format:
-	@echo "Formatting Go files..."
-	go fmt ./...
+.PHONY: help
+help: ## Show this help message
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-# Run tests
-test: format
-	@echo "Running tests..."
-	go test -v ./... --race
-
-# Build the project's executable
-build: format
+.PHONY: build
+build: format ## Build the binary for the current platform
 	@echo "Tidying dependencies..."
 	go mod tidy
 	@echo "Building the project..."
-	go build -o bin/$(notdir $(PKG))
+	go build -o $(BINARY)
 
-# Clean temporary and output files
-clean:
+.PHONY: format
+format: ## Format Go files
+	@echo "Formatting Go files..."
+	go fmt ./...
+
+.PHONY: test
+test: format ## Run tests
+	@echo "Running tests..."
+	go test -v ./... $(COVER_FLAGS) --race
+
+.PHONY: showcov
+showcov: test ## Display test coverage report
+	@echo "Displaying test coverage report..."
+	go tool cover -func=$(COVER_PROFILE)
+
+.PHONY: clean
+clean: ## Remove generated and temporary files
 	@echo "Cleaning up..."
 	find . -type f -name '*.got.*' -delete
 	find . -type f -name '*.out' -delete
+	find . -type f -name '*.snap' -delete
+	rm -f $(COVER_PROFILE)
 	rm -rf bin/
 
-# Run the built executable
-run: build
-	@echo "Running the project..."
-	./bin/$(notdir $(PKG))
+.PHONY: run
+run: build ## Build and run the binary
+	@echo "Running the $(BINARY) binary..."
+	./$(BINARY)
+
+.PHONY: build-macos
+build-macos: format ## Build a universal binary for macOS (x86_64 and arm64)
+	@echo "Building universal binary for macOS..."
+	mkdir -p bin
+	GOARCH=amd64 go build -o bin/$(BINARY_NAME)-x86_64 ./main.go
+	GOARCH=arm64 go build -o bin/$(BINARY_NAME)-arm64 ./main.go
+	lipo -create -output $(BINARY) bin/$(BINARY_NAME)-x86_64 bin/$(BINARY_NAME)-arm64
+
+.PHONY: snap-deps
+snap-deps: ## Install Snapcraft dependencies
+	@echo "Installing Snapcraft dependencies..."
+	sudo apt-get update
+	sudo apt-get install -y snapd
+	sudo snap refresh
+	sudo snap install snapcraft --classic
+	sudo snap install multipass --classic
+
+.PHONY: install-deps
+install-deps: ## Install development dependencies on Debian-based systems
+	@echo "Installing dependencies..."
+	make snap-deps
+	#sudo apt-get install -y chromium-browser build-essential chromium || true # ignore errors
+	#sudo snap install chromium
+	#sudo snap install go --classic
+	sudo snap install golangci-lint --classic
+	go mod download
+
+.PHONY: lint
+lint: format ## Run linters on Go files
+	@echo "Linting Go files..."
+	golangci-lint run ./...
