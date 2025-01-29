@@ -46,13 +46,10 @@
   </a>
 </p>
 
-This is a template repository with a minimalistic structure to make it easier to start a new Go project, whether for
-developing a console or a web application.
-
-I created this template to provide a starting point for my Go projects and save time.
+This is a template repository with a minimalistic structure to make it easier to start a new Go project.
 It is inspired by the recommendations
 in [golang-standards/project-layout](https://github.com/golang-standards/project-layout).
-I hope it will be useful for others as well.
+I share it here in case it might be useful to others.
 
 ## Features
 
