@@ -29,7 +29,7 @@
   <a href="https://pkg.go.dev/github.com/habedi/template-go-project">
   <img src="https://pkg.go.dev/badge/github.com/habedi/template-go-project" alt="Go Reference">
   </a>
-    <a href="https://github.com/habedi/template-go-project/docs">
+    <a href="docs">
     <img src="https://img.shields.io/badge/docs-docs-blue" alt="Docs">
     </a>
   <a href="https://codecov.io/gh/habedi/template-go-project">
