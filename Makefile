@@ -15,13 +15,6 @@ PATH := /snap/bin:$(PATH)
 help: ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-.PHONY: build
-build: format ## Build the binary for the current platform
-	@echo "Tidying dependencies..."
-	go mod tidy
-	@echo "Building the project..."
-	go build -o $(BINARY)
-
 .PHONY: format
 format: ## Format Go files
 	@echo "Formatting Go files..."
@@ -37,19 +30,12 @@ showcov: test ## Display test coverage report
 	@echo "Displaying test coverage report..."
 	go tool cover -func=$(COVER_PROFILE)
 
-.PHONY: clean
-clean: ## Remove generated and temporary files
-	@echo "Cleaning up..."
-	find . -type f -name '*.got.*' -delete
-	find . -type f -name '*.out' -delete
-	find . -type f -name '*.snap' -delete
-	rm -f $(COVER_PROFILE)
-	rm -rf bin/
-
-.PHONY: run
-run: build ## Build and run the binary
-	@echo "Running the $(BINARY) binary..."
-	./$(BINARY)
+.PHONY: build
+build: format ## Build the binary for the current platform
+	@echo "Tidying dependencies..."
+	go mod tidy
+	@echo "Building the project..."
+	go build -o $(BINARY)
 
 .PHONY: build-macos
 build-macos: format ## Build a universal binary for macOS (x86_64 and arm64)
@@ -58,6 +44,20 @@ build-macos: format ## Build a universal binary for macOS (x86_64 and arm64)
 	GOARCH=amd64 go build -o bin/$(BINARY_NAME)-x86_64 ./main.go
 	GOARCH=arm64 go build -o bin/$(BINARY_NAME)-arm64 ./main.go
 	lipo -create -output $(BINARY) bin/$(BINARY_NAME)-x86_64 bin/$(BINARY_NAME)-arm64
+
+.PHONY: run
+run: build ## Build and run the binary
+	@echo "Running the $(BINARY) binary..."
+	./$(BINARY)
+
+.PHONY: clean
+clean: ## Remove generated and temporary files
+	@echo "Cleaning up..."
+	find . -type f -name '*.got.*' -delete
+	find . -type f -name '*.out' -delete
+	find . -type f -name '*.snap' -delete
+	rm -f $(COVER_PROFILE)
+	rm -rf bin/
 
 .PHONY: snap-deps
 snap-deps: ## Install Snapcraft dependencies

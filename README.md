@@ -1,4 +1,4 @@
-# A Template Repository for Go Projects
+# A Template for Go Projects
 
 <div align="center">
   <picture>
@@ -29,6 +29,9 @@
   <a href="https://pkg.go.dev/github.com/habedi/template-go-project">
   <img src="https://pkg.go.dev/badge/github.com/habedi/template-go-project" alt="Go Reference">
   </a>
+    <a href="docs">
+    <img src="https://img.shields.io/badge/docs-docs-blue" alt="Docs">
+    </a>
   <a href="https://codecov.io/gh/habedi/template-go-project">
     <img src="https://codecov.io/gh/habedi/template-go-project/graph/badge.svg?token=1RUL13T0VE" alt="Code Coverage">
   </a>
@@ -43,13 +46,21 @@
   </a>
 </p>
 
-This is a template repository with a minimalistic structure to make it easier to start a new Go project,
-like for developing a console or a web application.
-
-I made this template to provide a starting point for my Go projects and save time.
+This is a template repository with a minimalistic structure to make it easier to start a new Go project.
 It is inspired by the recommendations
 in [golang-standards/project-layout](https://github.com/golang-standards/project-layout).
-I hope it will be useful for others as well.
+I share it here in case it might be useful to others.
+
+## Features
+
+- Minimalistic project structure
+- Pre-configured GitHub Actions for testing and building
+- Makefile for managing different tasks such as formatting, testing, and linting
+- Example configuration files
+
+## Contributing
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to make a contribution.
 
 ## License
 
