@@ -11,38 +11,59 @@
 
 <p align="center">
   <a href="https://github.com/habedi/template-go-project/actions/workflows/tests.yml">
-    <img src="https://github.com/habedi/template-go-project/actions/workflows/tests.yml/badge.svg" alt="Tests">
+    <img alt="Tests" 
+src="https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/tests.yml?label=Tests&style=flat&
+labelColor=555555&logo=github">
   </a>
   <a href="https://github.com/habedi/template-go-project/actions/workflows/build_linux.yml">
-    <img src="https://github.com/habedi/template-go-project/actions/workflows/build_linux.yml/badge.svg" alt="Linux Build">
+    <img alt="Linux Build" 
+src="https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_linux.yml?label=Linux%
+20Build&style=flat&labelColor=555555&logo=linux">
   </a>
   <a href="https://github.com/habedi/template-go-project/actions/workflows/build_windows.yml">
-    <img src="https://github.com/habedi/template-go-project/actions/workflows/build_windows.yml/badge.svg" alt="Windows Build">
+    <img alt="Windows Build" 
+src="https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_windows.yml?label=Windows%
+20Build&style=flat&labelColor=555555&logo=github">
   </a>
   <a href="https://github.com/habedi/template-go-project/actions/workflows/build_macos.yml">
-    <img src="https://github.com/habedi/template-go-project/actions/workflows/build_macos.yml/badge.svg" alt="MacOS Build">
+    <img alt="MacOS Build" 
+src="https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_macos.yml?label=MacOS%
+20Build&style=flat&labelColor=555555&logo=apple">
   </a>
   <br>
   <a href="https://goreportcard.com/report/github.com/habedi/template-go-project">
-  <img src="https://goreportcard.com/badge/github.com/habedi/template-go-project" alt="Go Report Card">
+    <img alt="Go Report Card" 
+src="https://img.shields.io/badge/Go%20Report-Check-007ec6?style=flat&labelColor=555555&logo=go">
   </a>
   <a href="https://pkg.go.dev/github.com/habedi/template-go-project">
-  <img src="https://pkg.go.dev/badge/github.com/habedi/template-go-project" alt="Go Reference">
+    <img alt="Go Reference" 
+src="https://img.shields.io/badge/Go%20Reference-Docs-3776ab?style=flat&labelColor=555555&logo=go">
   </a>
-    <a href="docs">
-    <img src="https://img.shields.io/badge/docs-docs-blue" alt="Docs">
-    </a>
   <a href="https://codecov.io/gh/habedi/template-go-project">
-    <img src="https://codecov.io/gh/habedi/template-go-project/graph/badge.svg?token=1RUL13T0VE" alt="Code Coverage">
+    <img alt="Code Coverage" 
+src="https://img.shields.io/codecov/c/github/habedi/template-go-project?style=flat&labelColor=555555&logo=codecov">
   </a>
   <a href="https://www.codefactor.io/repository/github/habedi/template-go-project">
-    <img src="https://www.codefactor.io/repository/github/habedi/template-go-project/badge" alt="CodeFactor">
+    <img alt="CodeFactor" 
+src="https://img.shields.io/codefactor/grade/github/habedi/template-go-project?style=flat&labelColor=555555&logo=
+codefactor">
+  </a>
+  <br>
+  <a href="docs">
+    <img alt="Docs" src="https://img.shields.io/badge/docs-latest-3776ab?style=flat&labelColor=555555&logo=readthedocs">
+  </a>
+  <a href="https://github.com/habedi/template-go-project">
+    <img alt="License" 
+src="https://img.shields.io/badge/license-MIT-007ec6?style=flat&labelColor=555555&logo=open-source-initiative">
   </a>
   <a href="https://github.com/habedi/template-go-project/releases/latest">
-    <img src="https://img.shields.io/github/release/habedi/template-go-project.svg?style=flat-square" alt="Release">
+    <img alt="Release" 
+src="https://img.shields.io/github/release/habedi/template-go-project.svg?style=flat&labelColor=555555&logo=github">
   </a>
   <a href="https://github.com/habedi/template-go-project/releases">
-  <img src="https://img.shields.io/github/downloads/habedi/template-go-project/total.svg" alt="Total Downloads">
+    <img alt="Total Downloads" 
+src="https://img.shields.io/github/downloads/habedi/template-go-project/total.svg?style=flat&labelColor=555555&logo=
+github">
   </a>
 </p>
 
@@ -54,9 +75,10 @@ I share it here in case it might be useful to others.
 ## Features
 
 - Minimalistic project structure
-- Pre-configured GitHub Actions for testing and building
-- Makefile for managing different tasks such as formatting, testing, and linting
-- Example configuration files
+- Pre-configured GitHub Actions for testing, building, and releasing
+- Makefile for managing common tasks such as formatting, testing, and linting
+- Example configuration files for popular tools like `golangci-lint`
+- GitHub badges for tests, builds, code quality and coverage, documentation, etc.
 
 ## Contributing
 
@@ -64,4 +86,4 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to make a contr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License ([LICENSE-MIT](LICENSE-MIT) or https://opensource.org/licenses/MIT)
