@@ -49,10 +49,10 @@ src="https://img.shields.io/codefactor/grade/github/habedi/template-go-project?s
 codefactor">
   </a>
   <br>
-  <a href="docs">
+  <a href="https://github.com/habedi/template-go-project/docs">
     <img alt="Docs" src="https://img.shields.io/badge/docs-latest-3776ab?style=flat&labelColor=555555&logo=readthedocs">
   </a>
-  <a href="https://github.com/habedi/template-go-project">
+  <a href="https://github.com/habedi/template-go-project/blob/main/LICENSE-MIT">
     <img alt="License" 
 src="https://img.shields.io/badge/license-MIT-007ec6?style=flat&labelColor=555555&logo=open-source-initiative">
   </a>
