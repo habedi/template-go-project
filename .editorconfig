@@ -26,7 +26,7 @@ trim_trailing_whitespace = false # Don't remove trailing whitespace in Markdown 
 indent_size = 2
 
 # YAML files
-[*.yaml]
+[*.{yml,yaml}]
 indent_size = 2
 
 

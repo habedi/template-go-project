@@ -81,3 +81,4 @@ coverage.html
 # Add any additional file patterns a directory names that should be ignored down here
 *.log
 bin/
+template-go-project
