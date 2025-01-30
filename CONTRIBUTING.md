@@ -23,19 +23,24 @@ would like to work on or if it has already been resolved.
 - Ensure all tests pass before submitting a pull request.
 - Write a clear description of the changes you made and the reasons behind them.
 
-## Code Style
+> [!IMPORTANT]
+> It's assumed that by submitting a pull request, you agree to license your contributions under the project's license.
+
+## Development Workflow
+
+### Code Style
 
 - Use the `make format` command to format the code.
 
-## Running Tests
+### Running Tests
 
-- Use the `make test` command to run the unit tests.
+- Use the `make test` command to run the tests.
 
-## Running Linters
+### Running Linters
 
 - Use the `make lint` command to run the linters.
 
-## Miscellaneous
+### See Available Commands
 
 - Run `make help` to see all available commands for managing different tasks.
 
