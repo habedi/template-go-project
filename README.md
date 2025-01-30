@@ -86,4 +86,4 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to make a contr
 
 ## License
 
-This project is licensed under the MIT License ([LICENSE-MIT](LICENSE-MIT) or https://opensource.org/licenses/MIT)
+This project is licensed under the MIT License ([LICENSE](LICENSE) or https://opensource.org/licenses/MIT)
