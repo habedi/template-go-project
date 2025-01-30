@@ -5,7 +5,8 @@ Contributions are always welcome and appreciated.
 
 ## How to Contribute
 
-Please check the [issue tracker](https://github.com/habedi/template-go-project/issues) to see if there is an issue you would like to work on or if it has already been resolved.
+Please check the [issue tracker](https://github.com/habedi/template-go-project/issues) to see if there is an issue you
+would like to work on or if it has already been resolved.
 
 ### Reporting Bugs
 
