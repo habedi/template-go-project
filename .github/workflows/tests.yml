@@ -36,7 +36,7 @@ jobs:
           make test # Generates a coverage.txt file for Codecov
         continue-on-error: false
 
-      - name: Upload coverage reports to Codecov
+      - name: Upload Coverage Reports to Codecov
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
