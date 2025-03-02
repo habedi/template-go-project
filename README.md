@@ -10,7 +10,7 @@
 <br>
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/tests.yml?label=tests&style=flat&labelColor=555555&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/tests.yml)
-[![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/lints.yml?label=linters&style=flat&labelColor=555555&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/lints.yml)
+[![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/lints.yml?label=lints&style=flat&labelColor=555555&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/lints.yml)
 [![Linux Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_linux.yml?label=linux%20build&style=flat&labelColor=555555&logo=linux)](https://github.com/habedi/template-go-project/actions/workflows/build_linux.yml)
 [![Windows Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_windows.yml?label=windows%20build&style=flat&labelColor=555555&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/build_windows.yml)
 [![MacOS Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_macos.yml?label=macos%20build&style=flat&labelColor=555555&logo=apple)](https://github.com/habedi/template-go-project/actions/workflows/build_macos.yml)
