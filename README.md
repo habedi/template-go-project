@@ -25,7 +25,6 @@
 [![License](https://img.shields.io/badge/license-MIT-007ec6?label=license&style=flat&labelColor=282c34&logo=open-source-initiative)](https://github.com/habedi/template-go-project)
 [![Status: Alpha](https://img.shields.io/badge/status-alpha-ec407a.svg?style=flat&labelColor=282c34)](https://github.com/habedi/template-go-project)
 
-
 This is a template repository with a minimalistic structure to make it easier to start a new Go project.
 It is inspired by the recommendations
 in [golang-standards/project-layout](https://github.com/golang-standards/project-layout).
