@@ -5,6 +5,7 @@
     <img alt="template-go-project logo" src="assets/logo-v1.svg" height="35%" width="35%">
   </picture>
 </div>
+<br>
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/tests.yml?label=tests&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/tests.yml)
 [![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/lints.yml?label=lints&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/lints.yml)
@@ -16,7 +17,7 @@
 [![Go Report Card](https://img.shields.io/badge/Go%20Report-Check-007ec6?label=go%20report%20card&style=flat&labelColor=282c34&logo=go)](https://goreportcard.com/report/github.com/habedi/template-go-project)
 [![Go Reference](https://img.shields.io/badge/Go%20Reference-Docs-007ec6?label=go%20reference&style=flat&labelColor=282c34&logo=go)](https://pkg.go.dev/github.com/habedi/template-go-project)
 [![Release](https://img.shields.io/github/release/habedi/template-go-project.svg?label=release&style=flat&labelColor=282c34&color=f46623&logo=github)](https://github.com/habedi/template-go-project/releases/latest)
-[![Total Downloads](https://img.shields.io/github/downloads/habedi/template-go-project/total.svg?label=downloads&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/releases)
+[![Total Downloads](https://img.shields.io/github/downloads/habedi/template-go-project/total.svg?label=downloads&style=flat&labelColor=282c34&color=8caf50&logo=github)](https://github.com/habedi/template-go-project/releases)
 <br>
 [![Code Coverage](https://img.shields.io/codecov/c/github/habedi/template-go-project?label=coverage&style=flat&labelColor=282c34&color=ffca28&logo=codecov)](https://codecov.io/gh/habedi/template-go-project)
 [![CodeFactor](https://img.shields.io/codefactor/grade/github/habedi/template-go-project?label=code%20quality&style=flat&labelColor=282c34&color=4caf50&logo=codefactor)](https://www.codefactor.io/repository/github/habedi/template-go-project)
