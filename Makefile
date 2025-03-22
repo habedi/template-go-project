@@ -37,7 +37,7 @@ format: ## Format Go files
 .PHONY: test
 test: format ## Run the tests
 	$(ECHO) "Running the tests..."
-	@$(GO) test -v ./... --cover --coverprofile=$(COVER_PROFILE) --race
+	@$(GO) test -v ./... --cover --coverprofile=$(COVER_PROFILE) --race --count=1
 
 .PHONY: showcov
 showcov: test ## Display test coverage report
@@ -92,4 +92,4 @@ install-deps: ## Install development dependencies (for Debian-based systems)
 .PHONY: lint
 lint: format ## Run the linters
 	$(ECHO) "Linting Go files..."
-	@golangci-lint run ./...
+	@golangci-lint run --fix ./...
