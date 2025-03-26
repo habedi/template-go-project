@@ -47,7 +47,7 @@ Check out the [Makefile](Makefile) for available commands to manage the developm
 
 ```shell
 # Install system dependencies (Go and GNU Make)
-sudo apt install golang-go make
+sudo apt-get install golang-go make
 ```
 
 ```shell
