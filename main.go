@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/habedi/template-go-project/cmd"
-	"github.com/rs/zerolog"
 	"os"
 	"os/signal"
 	"strings"
+
+	"github.com/habedi/template-go-project/cmd"
+	"github.com/rs/zerolog"
 
 	"github.com/rs/zerolog/log"
 )
@@ -14,7 +15,6 @@ import (
 // It sets up logging based on the DEBUG_PROJ environment variable,
 // starts a goroutine to listen for interrupt signals, and executes the main command.
 func main() {
-
 	// If the DEBUG_PROJ environment variable is set to false or 0, or not set at all, disable logging, otherwise enable it.
 	debugMode := strings.TrimSpace(strings.ToLower(os.Getenv("DEBUG_PROJ")))
 	if debugMode == "false" || debugMode == "0" || debugMode == "" {

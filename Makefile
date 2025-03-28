@@ -87,9 +87,16 @@ install-deps: ## Install development dependencies (for Debian-based systems)
 	@$(MAKE) install-snap
 	@sudo snap install go --classic
 	@sudo snap install golangci-lint --classic
+	@$(GO) install mvdan.cc/gofumpt@latest
+	@$(GO) install github.com/google/pprof@latest
 	@$(GO) mod download
 
 .PHONY: lint
 lint: format ## Run the linters
 	$(ECHO) "Linting Go files..."
 	@golangci-lint run --fix ./...
+
+.PHONY: gofumpt
+gofumpt: ## Run gofumpt to format Go files
+	@echo "Running gofumpt for formatting..."
+	@gofumpt -l -w .
