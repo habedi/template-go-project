@@ -7,11 +7,11 @@
 </div>
 <br>
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/tests.yml?label=tests&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/tests.yml)
-[![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/lints.yml?label=lints&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/lints.yml)
-[![Linux Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_linux.yml?label=linux%20build&style=flat&labelColor=282c34&color=4caf50&logo=linux)](https://github.com/habedi/template-go-project/actions/workflows/build_linux.yml)
-[![Windows Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_windows.yml?label=windows%20build&style=flat&labelColor=282c34&color=4caf50&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/build_windows.yml)
-[![MacOS Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_macos.yml?label=macos%20build&style=flat&labelColor=282c34&color=4caf50&logo=apple)](https://github.com/habedi/template-go-project/actions/workflows/build_macos.yml)
+[![Tests](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/tests.yml?label=tests&style=flat&labelColor=282c34&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/tests.yml)
+[![Lints](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/lints.yml?label=lints&style=flat&labelColor=282c34&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/lints.yml)
+[![Linux Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_linux.yml?label=linux%20build&style=flat&labelColor=282c34&logo=linux)](https://github.com/habedi/template-go-project/actions/workflows/build_linux.yml)
+[![Windows Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_windows.yml?label=windows%20build&style=flat&labelColor=282c34&logo=github)](https://github.com/habedi/template-go-project/actions/workflows/build_windows.yml)
+[![MacOS Build](https://img.shields.io/github/actions/workflow/status/habedi/template-go-project/build_macos.yml?label=macos%20build&style=flat&labelColor=282c34&logo=apple)](https://github.com/habedi/template-go-project/actions/workflows/build_macos.yml)
 <br>
 [![Go Version](https://img.shields.io/github/go-mod/go-version/habedi/template-go-project?label=min%20go%20version&style=flat&labelColor=282c34&color=007ec6&logo=go)](go.mod)
 [![Go Report Card](https://img.shields.io/badge/Go%20Report-Check-007ec6?label=go%20report%20card&style=flat&labelColor=282c34&logo=go)](https://goreportcard.com/report/github.com/habedi/template-go-project)
@@ -19,8 +19,8 @@
 [![Release](https://img.shields.io/github/release/habedi/template-go-project.svg?label=release&style=flat&labelColor=282c34&color=f46623&logo=github)](https://github.com/habedi/template-go-project/releases/latest)
 [![Total Downloads](https://img.shields.io/github/downloads/habedi/template-go-project/total.svg?label=downloads&style=flat&labelColor=282c34&color=8caf50&logo=github)](https://github.com/habedi/template-go-project/releases)
 <br>
-[![Code Coverage](https://img.shields.io/codecov/c/github/habedi/template-go-project?label=coverage&style=flat&labelColor=282c34&color=ffca28&logo=codecov)](https://codecov.io/gh/habedi/template-go-project)
-[![CodeFactor](https://img.shields.io/codefactor/grade/github/habedi/template-go-project?label=code%20quality&style=flat&labelColor=282c34&color=4caf50&logo=codefactor)](https://www.codefactor.io/repository/github/habedi/template-go-project)
+[![Code Coverage](https://img.shields.io/codecov/c/github/habedi/template-go-project?label=coverage&style=flat&labelColor=282c348&logo=codecov)](https://codecov.io/gh/habedi/template-go-project)
+[![CodeFactor](https://img.shields.io/codefactor/grade/github/habedi/template-go-project?label=code%20quality&style=flat&labelColor=282c34&logo=codefactor)](https://www.codefactor.io/repository/github/habedi/template-go-project)
 [![Docs](https://img.shields.io/badge/docs-latest-007ec6?label=docs&style=flat&labelColor=282c34&logo=readthedocs)](docs)
 [![License](https://img.shields.io/badge/license-MIT-007ec6?label=license&style=flat&labelColor=282c34&logo=open-source-initiative)](https://github.com/habedi/template-go-project)
 

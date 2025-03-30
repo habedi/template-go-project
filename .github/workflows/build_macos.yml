@@ -1,4 +1,4 @@
-name: MacOS Build
+name: Build for macOS
 
 on:
   workflow_dispatch: # Allows manual triggering of the workflow

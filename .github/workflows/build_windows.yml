@@ -1,4 +1,4 @@
-name: Windows Build
+name: Build for Windows
 
 on:
   workflow_dispatch: # Allows manual triggering of the workflow
