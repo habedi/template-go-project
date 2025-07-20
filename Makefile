@@ -10,7 +10,6 @@ endif
 REPO := github.com/habedi/template-go-project
 BINARY_NAME := $(or $(PROJ_BINARY), $(notdir $(REPO)))
 BINARY := bin/$(BINARY_NAME)
-MAKEFILE_LIST := Makefile
 COVER_PROFILE := coverage.txt
 GO_FILES := $(shell find . -type f -name '*.go')
 GO ?= go
@@ -34,9 +33,9 @@ SHELL := /bin/bash
 .DEFAULT_GOAL := help
 
 .PHONY: help
-help: ## Show the help message for each target (command)
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; \
-	  {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+help: ## Show help messages for all available targets
+	@grep -E '^[a-zA-Z_-]+:.*## .*$$' Makefile | \
+	awk 'BEGIN {FS = ":.*## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 .PHONY: format
 format: ## Format Go files
