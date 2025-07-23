@@ -76,7 +76,7 @@ run: build ## Build and run the binary for the current platform
 .PHONY: clean
 clean: ## Remove build artifacts and temporary files
 	$(ECHO) "Cleaning up..."
-	@$(GO) clean -cache -testcache -modcache
+	@$(GO) clean # -cache -testcache -modcache
 	@find . -type f -name '*.got.*' -delete
 	@find . -type f -name '*.out' -delete
 	@rm -f $(COVER_PROFILE)
