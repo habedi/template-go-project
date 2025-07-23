@@ -108,3 +108,19 @@ lint: format ## Run the linters
 gofumpt: ## Run gofumpt to format Go files
 	@echo "Running gofumpt for formatting..."
 	@gofumpt -l -w .
+
+.PHONY: setup-hooks
+setup-hooks: ## Install all pre-commit hooks (pre-commit and pre-push)
+	@echo "Setting up pre-commit hooks..."
+	@if ! command -v pre-commit &> /dev/null; then \
+	   echo "pre-commit not found. Please install it using 'pip install pre-commit'"; \
+	   exit 1; \
+	fi
+	@pre-commit install --hook-type pre-commit
+	@pre-commit install --hook-type pre-push
+	@pre-commit install-hooks
+
+.PHONY: test-hooks
+test-hooks: ## Test pre-commit hooks on all files
+	@echo "Testing pre-commit hooks..."
+	@pre-commit run --all-files

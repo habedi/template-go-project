@@ -28,5 +28,3 @@ indent_size = 2
 # YAML files
 [*.{yml,yaml}]
 indent_size = 2
-
-
