@@ -7,7 +7,7 @@ on:
       - 'v*' # Trigger on version tags
 
 jobs:
-  lint:
+  lints:
     runs-on: ubuntu-latest
 
     steps:
